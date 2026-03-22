@@ -1,0 +1,68 @@
+
+╔══════════════════════════════════════════════════════════════════╗
+║          DEEPFAKE DETECTION ANALYSIS REPORT                      ║
+╚══════════════════════════════════════════════════════════════════╝
+
+CASE INFORMATION
+─────────────────────────────────────────────────────────────────
+Case ID:          DF-DB8331FF0E618E97
+Analysis Date:    2025-12-14 19:05:02
+Severity Level:   HIGH
+
+DETECTION RESULTS
+─────────────────────────────────────────────────────────────────
+Deepfake Probability:     67%
+Confidence Score:         100%
+Total Frames Analyzed:    297
+Suspicious Frames:        20
+Processing Time:          3.99s
+
+ANOMALY SUMMARY
+─────────────────────────────────────────────────────────────────
+Face Similarity Issues:   35
+Lighting Inconsistencies: 0
+Edge Artifacts Detected:  12
+Symmetry Anomalies:       0
+Compression Issues:       12
+Blinking Pattern Issues:  0
+
+AI ANALYSIS SUMMARY
+─────────────────────────────────────────────────────────────────
+═══════════════════════════════════════════════════════════
+             TECHNICAL ANOMALY BREAKDOWN
+═══════════════════════════════════════════════════════════
+
+1. FACE SIMILARITY ANALYSIS
+────────────────────────────────────────────────────────────
+   Frame 4 @ 0.13s
+   Similarity Score: 0.5593
+   Status: ANOMALY
+
+   Frame 8 @ 0.27s
+   Similarity Score: 0.6583
+   Status: ANOMALY
+
+   Frame 12 @ 0.40s
+   Similarity Score: 0.9504
+   Status: ANOMALY
+
+   Frame 16 @ 0.53s
+   Similarity Score: 0.7706
+
+RECOMMENDED ACTIONS
+─────────────────────────────────────────────────────────────────
+1. Immediately preserve all evidence and metadata
+2. Restrict content distribution pending investigation
+3. Notify security team and stakeholders
+4. Conduct forensic analysis of source material
+5. Document chain of custody
+6. Consider involving digital forensics experts
+7. Report to appropriate authorities if necessary
+
+EVIDENCE LOCATION
+─────────────────────────────────────────────────────────────────
+All evidence has been preserved in: data/evidence/DF-DB8331FF0E618E97_evidence.json
+
+This report is generated automatically by the Autonomous Deepfake Detection System.
+For questions, contact your security team.
+═══════════════════════════════════════════════════════════════════

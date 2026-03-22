@@ -1,0 +1,377 @@
+{
+  "case_id": "DF-41FB0AFEA9264298",
+  "timestamp": "2025-12-14T18:43:23.353300",
+  "video_information": {
+    "filename": "video.mp4",
+    "size": "56.01 KB",
+    "source": "2025-12-14 13:13:17 UTC",
+    "upload_time": "2025-12-14T13:13:17.134757"
+  },
+  "detection_results": {
+    "deepfake_probability": 3,
+    "confidence_score": 100,
+    "total_frames": 300,
+    "suspicious_frames": 1,
+    "processing_time": 4.02,
+    "video_specs": {
+      "fps": 30,
+      "resolution": "132x168"
+    }
+  },
+  "anomaly_analysis": {
+    "face_similarity_issues": 38,
+    "lighting_inconsistencies": 0,
+    "edge_artifacts": 0,
+    "symmetry_issues": 0,
+    "compression_artifacts": 15,
+    "blinking_anomalies": 0,
+    "detailed_anomalies": {
+      "face_similarity": [
+        {
+          "frame": 4,
+          "similarity": 0.9464081525802612,
+          "timestamp": 0.13333333333333333
+        },
+        {
+          "frame": 8,
+          "similarity": 0.9760111570358276,
+          "timestamp": 0.26666666666666666
+        },
+        {
+          "frame": 16,
+          "similarity": 0.9218499064445496,
+          "timestamp": 0.5333333333333333
+        },
+        {
+          "frame": 20,
+          "similarity": 0.9302605986595154,
+          "timestamp": 0.6666666666666666
+        },
+        {
+          "frame": 24,
+          "similarity": 0.9687296748161316,
+          "timestamp": 0.8
+        },
+        {
+          "frame": 28,
+          "similarity": 0.9870492219924927,
+          "timestamp": 0.9333333333333333
+        },
+        {
+          "frame": 88,
+          "similarity": 0.9634734988212585,
+          "timestamp": 2.933333333333333
+        },
+        {
+          "frame": 92,
+          "similarity": 0.9581049680709839,
+          "timestamp": 3.066666666666667
+        },
+        {
+          "frame": 96,
+          "similarity": 0.9649376273155212,
+          "timestamp": 3.2
+        },
+        {
+          "frame": 100,
+          "similarity": 0.9639521241188049,
+          "timestamp": 3.3333333333333335
+        },
+        {
+          "frame": 112,
+          "similarity": 0.9695010185241699,
+          "timestamp": 3.7333333333333334
+        },
+        {
+          "frame": 116,
+          "similarity": 0.9421541690826416,
+          "timestamp": 3.8666666666666667
+        },
+        {
+          "frame": 120,
+          "similarity": 0.9824375510215759,
+          "timestamp": 4.0
+        },
+        {
+          "frame": 124,
+          "similarity": 0.921339213848114,
+          "timestamp": 4.133333333333334
+        },
+        {
+          "frame": 128,
+          "similarity": 0.9609335064888,
+          "timestamp": 4.266666666666667
+        },
+        {
+          "frame": 132,
+          "similarity": 0.9734804630279541,
+          "timestamp": 4.4
+        },
+        {
+          "frame": 136,
+          "similarity": 0.9814140796661377,
+          "timestamp": 4.533333333333333
+        },
+        {
+          "frame": 140,
+          "similarity": 0.9728161096572876,
+          "timestamp": 4.666666666666667
+        },
+        {
+          "frame": 148,
+          "similarity": 0.989702045917511,
+          "timestamp": 4.933333333333334
+        },
+        {
+          "frame": 196,
+          "similarity": 0.9329743385314941,
+          "timestamp": 6.533333333333333
+        },
+        {
+          "frame": 200,
+          "similarity": 0.989130437374115,
+          "timestamp": 6.666666666666667
+        },
+        {
+          "frame": 204,
+          "similarity": 0.9633514881134033,
+          "timestamp": 6.8
+        },
+        {
+          "frame": 208,
+          "similarity": 0.987945020198822,
+          "timestamp": 6.933333333333334
+        },
+        {
+          "frame": 216,
+          "similarity": 0.9862209558486938,
+          "timestamp": 7.2
+        },
+        {
+          "frame": 220,
+          "similarity": 0.9840556979179382,
+          "timestamp": 7.333333333333333
+        },
+        {
+          "frame": 224,
+          "similarity": 0.9857208132743835,
+          "timestamp": 7.466666666666667
+        },
+        {
+          "frame": 228,
+          "similarity": 0.9805487394332886,
+          "timestamp": 7.6
+        },
+        {
+          "frame": 232,
+          "similarity": 0.9527336955070496,
+          "timestamp": 7.733333333333333
+        },
+        {
+          "frame": 240,
+          "similarity": 0.978757381439209,
+          "timestamp": 8.0
+        },
+        {
+          "frame": 248,
+          "similarity": 0.9332044124603271,
+          "timestamp": 8.266666666666667
+        },
+        {
+          "frame": 252,
+          "similarity": 0.9892035126686096,
+          "timestamp": 8.4
+        },
+        {
+          "frame": 256,
+          "similarity": 0.9801145792007446,
+          "timestamp": 8.533333333333333
+        },
+        {
+          "frame": 260,
+          "similarity": 0.9801717400550842,
+          "timestamp": 8.666666666666666
+        },
+        {
+          "frame": 272,
+          "similarity": 0.9681980013847351,
+          "timestamp": 9.066666666666666
+        },
+        {
+          "frame": 276,
+          "similarity": 0.9743131995201111,
+          "timestamp": 9.2
+        },
+        {
+          "frame": 284,
+          "similarity": 0.9872401356697083,
+          "timestamp": 9.466666666666667
+        },
+        {
+          "frame": 288,
+          "similarity": 0.9833793640136719,
+          "timestamp": 9.6
+        },
+        {
+          "frame": 292,
+          "similarity": 0.9848917722702026,
+          "timestamp": 9.733333333333333
+        }
+      ],
+      "lighting": [],
+      "edges": [],
+      "symmetry": [],
+      "compression": [
+        {
+          "frame": 0,
+          "timestamp": 0.0,
+          "anomaly": true,
+          "type": "compression_artifacts",
+          "confidence": 0.55,
+          "details": "High frequency anomaly: 93.93"
+        },
+        {
+          "frame": 12,
+          "timestamp": 0.4,
+          "anomaly": true,
+          "type": "compression_artifacts",
+          "confidence": 0.55,
+          "details": "High frequency anomaly: 111.01"
+        },
+        {
+          "frame": 24,
+          "timestamp": 0.8,
+          "anomaly": true,
+          "type": "compression_artifacts",
+          "confidence": 0.55,
+          "details": "High frequency anomaly: 110.61"
+        },
+        {
+          "frame": 96,
+          "timestamp": 3.2,
+          "anomaly": true,
+          "type": "compression_artifacts",
+          "confidence": 0.55,
+          "details": "High frequency anomaly: 109.49"
+        },
+        {
+          "frame": 120,
+          "timestamp": 4.0,
+          "anomaly": true,
+          "type": "compression_artifacts",
+          "confidence": 0.55,
+          "details": "High frequency anomaly: 111.96"
+        },
+        {
+          "frame": 132,
+          "timestamp": 4.4,
+          "anomaly": true,
+          "type": "compression_artifacts",
+          "confidence": 0.55,
+          "details": "High frequency anomaly: 112.74"
+        },
+        {
+          "frame": 144,
+          "timestamp": 4.8,
+          "anomaly": true,
+          "type": "compression_artifacts",
+          "confidence": 0.55,
+          "details": "High frequency anomaly: 109.85"
+        },
+        {
+          "frame": 204,
+          "timestamp": 6.8,
+          "anomaly": true,
+          "type": "compression_artifacts",
+          "confidence": 0.55,
+          "details": "High frequency anomaly: 110.20"
+        },
+        {
+          "frame": 216,
+          "timestamp": 7.2,
+          "anomaly": true,
+          "type": "compression_artifacts",
+          "confidence": 0.55,
+          "details": "High frequency anomaly: 111.26"
+        },
+        {
+          "frame": 228,
+          "timestamp": 7.6,
+          "anomaly": true,
+          "type": "compression_artifacts",
+          "confidence": 0.55,
+          "details": "High frequency anomaly: 110.81"
+        },
+        {
+          "frame": 240,
+          "timestamp": 8.0,
+          "anomaly": true,
+          "type": "compression_artifacts",
+          "confidence": 0.55,
+          "details": "High frequency anomaly: 109.89"
+        },
+        {
+          "frame": 252,
+          "timestamp": 8.4,
+          "anomaly": true,
+          "type": "compression_artifacts",
+          "confidence": 0.55,
+          "details": "High frequency anomaly: 110.57"
+        },
+        {
+          "frame": 264,
+          "timestamp": 8.8,
+          "anomaly": true,
+          "type": "compression_artifacts",
+          "confidence": 0.55,
+          "details": "High frequency anomaly: 110.36"
+        },
+        {
+          "frame": 276,
+          "timestamp": 9.2,
+          "anomaly": true,
+          "type": "compression_artifacts",
+          "confidence": 0.55,
+          "details": "High frequency anomaly: 109.60"
+        },
+        {
+          "frame": 288,
+          "timestamp": 9.6,
+          "anomaly": true,
+          "type": "compression_artifacts",
+          "confidence": 0.55,
+          "details": "High frequency anomaly: 109.46"
+        }
+      ],
+      "blinking": []
+    }
+  },
+  "ai_analysis": {
+    "visual_explanation": "Unable to generate visual explanation",
+    "anomaly_breakdown": "Error generating anomaly breakdown: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\nPlease retry in 37.487018474s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_input_token_count\"\n  quota_id: \"GenerateContentInput",
+    "search_results_summary": "Unable to perform content search",
+    "severity": "LOW"
+  },
+  "metadata": {
+    "detection_version": "2.0",
+    "model_used": "InceptionResnetV1 + Gemini 2.0 Flash",
+    "compliance_ready": true,
+    "chain_of_custody": [
+      {
+        "action": "Video uploaded and received",
+        "timestamp": "2025-12-14T18:43:23.353300",
+        "actor": "System"
+      },
+      {
+        "action": "Deepfake detection analysis initiated",
+        "timestamp": "2025-12-14T18:43:23.353300",
+        "actor": "Autonomous Agent"
+      },
+      {
+        "action": "Evidence logged",
+        "timestamp": "2025-12-14T18:43:23.353300",
+        "actor": "Autonomous Agent"
+      }
+    ]
+  }
+}

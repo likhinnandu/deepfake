@@ -1,0 +1,276 @@
+2025-12-14 18:30:42,119 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.29.84:5000
+2025-12-14 18:30:42,119 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-14 18:30:42,155 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-14 18:30:49,162 - werkzeug - WARNING -  * Debugger is active!
+2025-12-14 18:30:49,169 - werkzeug - INFO -  * Debugger PIN: 140-503-552
+2025-12-14 18:31:06,556 - werkzeug - INFO - 127.0.0.1 - - [14/Dec/2025 18:31:06] "GET / HTTP/1.1" 200 -
+2025-12-14 18:31:08,493 - werkzeug - INFO - 127.0.0.1 - - [14/Dec/2025 18:31:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-12-14 18:31:38,719 - AutonomousAgent - INFO - ======================================================================
+2025-12-14 18:31:38,719 - AutonomousAgent - INFO - AUTONOMOUS AGENT INITIATED
+2025-12-14 18:31:38,719 - AutonomousAgent - INFO - ======================================================================
+2025-12-14 18:31:38,721 - AutonomousAgent - INFO - Case ID Generated: DF-DAD91626ACB8531C
+2025-12-14 18:31:38,721 - AutonomousAgent - INFO - Logging comprehensive evidence...
+2025-12-14 18:31:38,727 - AutonomousAgent - INFO - Evidence logged for case DF-DAD91626ACB8531C: data/evidence\DF-DAD91626ACB8531C_evidence.json
+2025-12-14 18:31:38,727 - AutonomousAgent - INFO - Creating summary report...
+2025-12-14 18:31:38,730 - AutonomousAgent - INFO - Summary report created: data/evidence\DF-DAD91626ACB8531C_report.txt
+2025-12-14 18:31:38,731 - AutonomousAgent - INFO - Sending HIGH severity alert...
+2025-12-14 18:31:38,731 - AutonomousAgent - WARNING - ALERT [HIGH] - Case DF-DAD91626ACB8531C
+2025-12-14 18:31:38,731 - AutonomousAgent - WARNING - ALERT: Potential deepfake detected with 67% confidence
+2025-12-14 18:31:38,733 - AutonomousAgent - INFO - ======================================================================
+2025-12-14 18:31:38,733 - AutonomousAgent - INFO - AUTONOMOUS RESPONSE COMPLETED - Case DF-DAD91626ACB8531C
+2025-12-14 18:31:38,733 - AutonomousAgent - INFO - ======================================================================
+2025-12-14 18:31:38,772 - werkzeug - INFO - 127.0.0.1 - - [14/Dec/2025 18:31:38] "POST /upload HTTP/1.1" 200 -
+2025-12-14 18:31:39,367 - werkzeug - INFO - 127.0.0.1 - - [14/Dec/2025 18:31:39] "[35m[1mGET /static/videos/uploaded_video_1765717291.mp4 HTTP/1.1[0m" 206 -
+2025-12-14 18:32:24,063 - werkzeug - INFO -  * Detected change in 'C:\\Users\\pashi\\Downloads\\deepfake\\config.py', reloading
+2025-12-14 18:32:24,085 - werkzeug - INFO -  * Detected change in 'C:\\Users\\pashi\\Downloads\\deepfake\\config.py', reloading
+2025-12-14 18:32:24,085 - werkzeug - INFO -  * Detected change in 'C:\\Users\\pashi\\Downloads\\deepfake\\config.py', reloading
+2025-12-14 18:32:27,750 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-14 18:32:35,529 - werkzeug - WARNING -  * Debugger is active!
+2025-12-14 18:32:35,534 - werkzeug - INFO -  * Debugger PIN: 140-503-552
+2025-12-14 18:32:51,597 - werkzeug - INFO - 127.0.0.1 - - [14/Dec/2025 18:32:51] "GET / HTTP/1.1" 200 -
+2025-12-14 18:33:06,146 - AutonomousAgent - INFO - ======================================================================
+2025-12-14 18:33:06,146 - AutonomousAgent - INFO - AUTONOMOUS AGENT INITIATED
+2025-12-14 18:33:06,146 - AutonomousAgent - INFO - ======================================================================
+2025-12-14 18:33:06,146 - AutonomousAgent - INFO - Case ID Generated: DF-0064973E80912FF6
+2025-12-14 18:33:06,146 - AutonomousAgent - INFO - Logging comprehensive evidence...
+2025-12-14 18:33:06,154 - AutonomousAgent - INFO - Evidence logged for case DF-0064973E80912FF6: data/evidence\DF-0064973E80912FF6_evidence.json
+2025-12-14 18:33:06,154 - AutonomousAgent - INFO - Creating summary report...
+2025-12-14 18:33:06,154 - AutonomousAgent - INFO - Summary report created: data/evidence\DF-0064973E80912FF6_report.txt
+2025-12-14 18:33:06,156 - AutonomousAgent - INFO - Sending HIGH severity alert...
+2025-12-14 18:33:06,156 - AutonomousAgent - WARNING - ALERT [HIGH] - Case DF-0064973E80912FF6
+2025-12-14 18:33:06,156 - AutonomousAgent - WARNING - ALERT: Potential deepfake detected with 67% confidence
+2025-12-14 18:33:06,156 - AutonomousAgent - INFO - ======================================================================
+2025-12-14 18:33:06,156 - AutonomousAgent - INFO - AUTONOMOUS RESPONSE COMPLETED - Case DF-0064973E80912FF6
+2025-12-14 18:33:06,156 - AutonomousAgent - INFO - ======================================================================
+2025-12-14 18:33:06,202 - werkzeug - INFO - 127.0.0.1 - - [14/Dec/2025 18:33:06] "POST /upload HTTP/1.1" 200 -
+2025-12-14 18:33:06,295 - werkzeug - INFO - 127.0.0.1 - - [14/Dec/2025 18:33:06] "[35m[1mGET /static/videos/uploaded_video_1765717381.mp4 HTTP/1.1[0m" 206 -
+2025-12-14 18:34:05,592 - werkzeug - INFO -  * Detected change in 'C:\\Users\\pashi\\Downloads\\deepfake\\enhanced_detector.py', reloading
+2025-12-14 18:34:05,592 - werkzeug - INFO -  * Detected change in 'C:\\Users\\pashi\\Downloads\\deepfake\\gemini_explainer.py', reloading
+2025-12-14 18:34:05,660 - werkzeug - INFO -  * Detected change in 'C:\\Users\\pashi\\Downloads\\deepfake\\main.py', reloading
+2025-12-14 18:34:05,680 - werkzeug - INFO -  * Detected change in 'C:\\Users\\pashi\\Downloads\\deepfake\\autonomous_agent.py', reloading
+2025-12-14 18:34:05,688 - werkzeug - INFO -  * Detected change in 'C:\\Users\\pashi\\Downloads\\deepfake\\config.py', reloading
+2025-12-14 18:34:05,689 - werkzeug - INFO -  * Detected change in 'C:\\Users\\pashi\\Downloads\\deepfake\\gemini_explainer.py', reloading
+2025-12-14 18:34:05,690 - werkzeug - INFO -  * Detected change in 'C:\\Users\\pashi\\Downloads\\deepfake\\enhanced_detector.py', reloading
+2025-12-14 18:34:05,692 - werkzeug - INFO -  * Detected change in 'C:\\Users\\pashi\\Downloads\\deepfake\\main.py', reloading
+2025-12-14 18:34:05,692 - werkzeug - INFO -  * Detected change in 'C:\\Users\\pashi\\Downloads\\deepfake\\autonomous_agent.py', reloading
+2025-12-14 18:34:05,693 - werkzeug - INFO -  * Detected change in 'C:\\Users\\pashi\\Downloads\\deepfake\\main.py', reloading
+2025-12-14 18:34:05,693 - werkzeug - INFO -  * Detected change in 'C:\\Users\\pashi\\Downloads\\deepfake\\gemini_explainer.py', reloading
+2025-12-14 18:34:05,694 - werkzeug - INFO -  * Detected change in 'C:\\Users\\pashi\\Downloads\\deepfake\\autonomous_agent.py', reloading
+2025-12-14 18:34:05,694 - werkzeug - INFO -  * Detected change in 'C:\\Users\\pashi\\Downloads\\deepfake\\check_system.py', reloading
+2025-12-14 18:34:05,695 - werkzeug - INFO -  * Detected change in 'C:\\Users\\pashi\\Downloads\\deepfake\\fallback_explainer.py', reloading
+2025-12-14 18:34:05,695 - werkzeug - INFO -  * Detected change in 'C:\\Users\\pashi\\Downloads\\deepfake\\config.py', reloading
+2025-12-14 18:34:05,696 - werkzeug - INFO -  * Detected change in 'C:\\Users\\pashi\\Downloads\\deepfake\\check_system.py', reloading
+2025-12-14 18:34:05,696 - werkzeug - INFO -  * Detected change in 'C:\\Users\\pashi\\Downloads\\deepfake\\fallback_explainer.py', reloading
+2025-12-14 18:34:08,600 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-14 18:34:13,693 - werkzeug - WARNING -  * Debugger is active!
+2025-12-14 18:34:13,697 - werkzeug - INFO -  * Debugger PIN: 140-503-552
+2025-12-14 18:34:19,873 - werkzeug - INFO -  * Detected change in 'C:\\Users\\pashi\\Downloads\\deepfake\\config.py', reloading
+2025-12-14 18:34:19,873 - werkzeug - INFO -  * Detected change in 'C:\\Users\\pashi\\Downloads\\deepfake\\config.py', reloading
+2025-12-14 18:34:21,688 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-14 18:34:26,937 - werkzeug - WARNING -  * Debugger is active!
+2025-12-14 18:34:26,942 - werkzeug - INFO -  * Debugger PIN: 140-503-552
+2025-12-14 18:36:15,786 - werkzeug - INFO -  * Detected change in 'C:\\Users\\pashi\\Downloads\\deepfake\\main.py', reloading
+2025-12-14 18:36:17,493 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-14 18:36:22,217 - werkzeug - WARNING -  * Debugger is active!
+2025-12-14 18:36:22,225 - werkzeug - INFO -  * Debugger PIN: 140-503-552
+2025-12-14 18:36:23,053 - werkzeug - INFO -  * Detected change in 'C:\\Users\\pashi\\Downloads\\deepfake\\main.py', reloading
+2025-12-14 18:36:23,053 - werkzeug - INFO -  * Detected change in 'C:\\Users\\pashi\\Downloads\\deepfake\\main.py', reloading
+2025-12-14 18:36:24,037 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-14 18:36:28,569 - werkzeug - WARNING -  * Debugger is active!
+2025-12-14 18:36:28,580 - werkzeug - INFO -  * Debugger PIN: 140-503-552
+2025-12-14 18:42:52,418 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.29.84:5000
+2025-12-14 18:42:52,418 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-14 18:42:52,451 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-14 18:42:58,317 - werkzeug - WARNING -  * Debugger is active!
+2025-12-14 18:42:58,336 - werkzeug - INFO -  * Debugger PIN: 140-503-552
+2025-12-14 18:42:58,495 - werkzeug - INFO - 127.0.0.1 - - [14/Dec/2025 18:42:58] "GET / HTTP/1.1" 200 -
+2025-12-14 18:43:23,349 - AutonomousAgent - INFO - ======================================================================
+2025-12-14 18:43:23,350 - AutonomousAgent - INFO - AUTONOMOUS AGENT INITIATED
+2025-12-14 18:43:23,350 - AutonomousAgent - INFO - ======================================================================
+2025-12-14 18:43:23,352 - AutonomousAgent - INFO - Case ID Generated: DF-41FB0AFEA9264298
+2025-12-14 18:43:23,352 - AutonomousAgent - INFO - Logging comprehensive evidence...
+2025-12-14 18:43:23,362 - AutonomousAgent - INFO - Evidence logged for case DF-41FB0AFEA9264298: data/evidence\DF-41FB0AFEA9264298_evidence.json
+2025-12-14 18:43:23,364 - AutonomousAgent - INFO - Creating summary report...
+2025-12-14 18:43:23,367 - AutonomousAgent - INFO - Summary report created: data/evidence\DF-41FB0AFEA9264298_report.txt
+2025-12-14 18:43:23,369 - AutonomousAgent - INFO - ======================================================================
+2025-12-14 18:43:23,371 - AutonomousAgent - INFO - AUTONOMOUS RESPONSE COMPLETED - Case DF-41FB0AFEA9264298
+2025-12-14 18:43:23,371 - AutonomousAgent - INFO - ======================================================================
+2025-12-14 18:43:23,464 - werkzeug - INFO - 127.0.0.1 - - [14/Dec/2025 18:43:23] "POST /upload HTTP/1.1" 200 -
+2025-12-14 18:43:23,688 - werkzeug - INFO - 127.0.0.1 - - [14/Dec/2025 18:43:23] "[35m[1mGET /static/videos/uploaded_video_1765717997.mp4 HTTP/1.1[0m" 206 -
+2025-12-14 18:53:55,195 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.29.84:5000
+2025-12-14 18:53:55,195 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-14 18:53:55,238 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-14 18:54:04,707 - werkzeug - WARNING -  * Debugger is active!
+2025-12-14 18:54:04,721 - werkzeug - INFO -  * Debugger PIN: 140-503-552
+2025-12-14 18:54:04,820 - werkzeug - INFO - 127.0.0.1 - - [14/Dec/2025 18:54:04] "GET / HTTP/1.1" 200 -
+2025-12-14 18:54:35,383 - AutonomousAgent - INFO - ======================================================================
+2025-12-14 18:54:35,383 - AutonomousAgent - INFO - AUTONOMOUS AGENT INITIATED
+2025-12-14 18:54:35,383 - AutonomousAgent - INFO - ======================================================================
+2025-12-14 18:54:35,399 - AutonomousAgent - INFO - Case ID Generated: DF-ADEFCCCCE67B56A2
+2025-12-14 18:54:35,399 - AutonomousAgent - INFO - Logging comprehensive evidence...
+2025-12-14 18:54:35,400 - AutonomousAgent - INFO - Evidence logged for case DF-ADEFCCCCE67B56A2: data/evidence\DF-ADEFCCCCE67B56A2_evidence.json
+2025-12-14 18:54:35,400 - AutonomousAgent - INFO - Creating summary report...
+2025-12-14 18:54:35,400 - AutonomousAgent - INFO - Summary report created: data/evidence\DF-ADEFCCCCE67B56A2_report.txt
+2025-12-14 18:54:35,400 - AutonomousAgent - INFO - Sending HIGH severity alert...
+2025-12-14 18:54:35,400 - AutonomousAgent - WARNING - ALERT [HIGH] - Case DF-ADEFCCCCE67B56A2
+2025-12-14 18:54:35,485 - werkzeug - INFO -  * Detected change in 'C:\\Users\\pashi\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\logging\\__init__.py', reloading
+2025-12-14 18:54:35,806 - AutonomousAgent - INFO - ======================================================================
+2025-12-14 18:54:35,806 - AutonomousAgent - INFO - AUTONOMOUS RESPONSE COMPLETED - Case DF-ADEFCCCCE67B56A2
+2025-12-14 18:54:35,806 - AutonomousAgent - INFO - ======================================================================
+2025-12-14 18:54:38,651 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-14 18:54:45,909 - werkzeug - WARNING -  * Debugger is active!
+2025-12-14 18:54:45,917 - werkzeug - INFO -  * Debugger PIN: 140-503-552
+2025-12-14 18:54:50,601 - AutonomousAgent - INFO - ======================================================================
+2025-12-14 18:54:50,602 - AutonomousAgent - INFO - AUTONOMOUS AGENT INITIATED
+2025-12-14 18:54:50,602 - AutonomousAgent - INFO - ======================================================================
+2025-12-14 18:54:50,602 - AutonomousAgent - INFO - Case ID Generated: DF-7679DBC9834A55EF
+2025-12-14 18:54:50,602 - AutonomousAgent - INFO - Logging comprehensive evidence...
+2025-12-14 18:54:50,607 - AutonomousAgent - INFO - Evidence logged for case DF-7679DBC9834A55EF: data/evidence\DF-7679DBC9834A55EF_evidence.json
+2025-12-14 18:54:50,616 - AutonomousAgent - INFO - Creating summary report...
+2025-12-14 18:54:50,620 - AutonomousAgent - INFO - Summary report created: data/evidence\DF-7679DBC9834A55EF_report.txt
+2025-12-14 18:54:50,620 - AutonomousAgent - INFO - Sending HIGH severity alert...
+2025-12-14 18:54:50,620 - AutonomousAgent - WARNING - ALERT [HIGH] - Case DF-7679DBC9834A55EF
+2025-12-14 18:54:50,653 - AutonomousAgent - INFO - ======================================================================
+2025-12-14 18:54:50,653 - AutonomousAgent - INFO - AUTONOMOUS RESPONSE COMPLETED - Case DF-7679DBC9834A55EF
+2025-12-14 18:54:50,654 - AutonomousAgent - INFO - ======================================================================
+2025-12-14 18:54:50,736 - werkzeug - INFO - 127.0.0.1 - - [14/Dec/2025 18:54:50] "POST /upload HTTP/1.1" 200 -
+2025-12-14 18:54:51,336 - werkzeug - INFO - 127.0.0.1 - - [14/Dec/2025 18:54:51] "[35m[1mGET /static/videos/uploaded_video_1765718685.mp4 HTTP/1.1[0m" 206 -
+2025-12-14 18:55:36,848 - werkzeug - INFO - 127.0.0.1 - - [14/Dec/2025 18:55:36] "GET / HTTP/1.1" 200 -
+2025-12-14 18:57:16,055 - werkzeug - INFO -  * Detected change in 'C:\\Users\\pashi\\Downloads\\deepfake\\gemini_explainer.py', reloading
+2025-12-14 18:57:16,055 - werkzeug - INFO -  * Detected change in 'C:\\Users\\pashi\\Downloads\\deepfake\\gemini_explainer.py', reloading
+2025-12-14 18:57:16,056 - werkzeug - INFO -  * Detected change in 'C:\\Users\\pashi\\Downloads\\deepfake\\gemini_explainer.py', reloading
+2025-12-14 18:57:19,646 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-14 18:57:25,883 - werkzeug - WARNING -  * Debugger is active!
+2025-12-14 18:57:25,901 - werkzeug - INFO -  * Debugger PIN: 140-503-552
+2025-12-14 18:59:12,049 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.29.84:5000
+2025-12-14 18:59:12,049 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-14 18:59:12,072 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-14 18:59:16,088 - werkzeug - INFO - 127.0.0.1 - - [14/Dec/2025 18:59:16] "GET / HTTP/1.1" 200 -
+2025-12-14 18:59:19,447 - werkzeug - WARNING -  * Debugger is active!
+2025-12-14 18:59:19,455 - werkzeug - INFO -  * Debugger PIN: 140-503-552
+2025-12-14 18:59:31,606 - AutonomousAgent - INFO - ======================================================================
+2025-12-14 18:59:31,606 - AutonomousAgent - INFO - AUTONOMOUS AGENT INITIATED
+2025-12-14 18:59:31,607 - AutonomousAgent - INFO - ======================================================================
+2025-12-14 18:59:31,607 - AutonomousAgent - INFO - Case ID Generated: DF-983D97B57D2094EB
+2025-12-14 18:59:31,607 - AutonomousAgent - INFO - Logging comprehensive evidence...
+2025-12-14 18:59:31,618 - AutonomousAgent - INFO - Evidence logged for case DF-983D97B57D2094EB: data/evidence\DF-983D97B57D2094EB_evidence.json
+2025-12-14 18:59:31,619 - AutonomousAgent - INFO - Creating summary report...
+2025-12-14 18:59:31,620 - AutonomousAgent - INFO - Summary report created: data/evidence\DF-983D97B57D2094EB_report.txt
+2025-12-14 18:59:31,620 - AutonomousAgent - INFO - Sending HIGH severity alert...
+2025-12-14 18:59:31,620 - AutonomousAgent - WARNING - ALERT [HIGH] - Case DF-983D97B57D2094EB
+2025-12-14 18:59:31,668 - AutonomousAgent - INFO - ======================================================================
+2025-12-14 18:59:31,669 - AutonomousAgent - INFO - AUTONOMOUS RESPONSE COMPLETED - Case DF-983D97B57D2094EB
+2025-12-14 18:59:31,669 - AutonomousAgent - INFO - ======================================================================
+2025-12-14 18:59:31,826 - werkzeug - INFO -  * Detected change in 'C:\\Users\\pashi\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\jinja2\\async_utils.py', reloading
+2025-12-14 18:59:31,826 - werkzeug - INFO -  * Detected change in 'C:\\Users\\pashi\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\jinja2\\async_utils.py', reloading
+2025-12-14 18:59:31,880 - werkzeug - INFO -  * Detected change in 'C:\\Users\\pashi\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\jinja2\\filters.py', reloading
+2025-12-14 18:59:33,585 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-14 18:59:36,539 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-14 18:59:44,754 - werkzeug - WARNING -  * Debugger is active!
+2025-12-14 18:59:44,762 - werkzeug - INFO -  * Debugger PIN: 140-503-552
+2025-12-14 18:59:44,762 - werkzeug - INFO -  * Debugger PIN: 140-503-552
+2025-12-14 18:59:49,882 - AutonomousAgent - INFO - ======================================================================
+2025-12-14 18:59:49,882 - AutonomousAgent - INFO - AUTONOMOUS AGENT INITIATED
+2025-12-14 18:59:49,882 - AutonomousAgent - INFO - ======================================================================
+2025-12-14 18:59:49,882 - AutonomousAgent - INFO - Case ID Generated: DF-FC39A8387672A87B
+2025-12-14 18:59:49,882 - AutonomousAgent - INFO - Logging comprehensive evidence...
+2025-12-14 18:59:49,904 - AutonomousAgent - INFO - Evidence logged for case DF-FC39A8387672A87B: data/evidence\DF-FC39A8387672A87B_evidence.json
+2025-12-14 18:59:49,904 - AutonomousAgent - INFO - Creating summary report...
+2025-12-14 18:59:49,906 - AutonomousAgent - INFO - Summary report created: data/evidence\DF-FC39A8387672A87B_report.txt
+2025-12-14 18:59:49,907 - AutonomousAgent - INFO - Sending HIGH severity alert...
+2025-12-14 18:59:49,908 - AutonomousAgent - WARNING - ALERT [HIGH] - Case DF-FC39A8387672A87B
+2025-12-14 18:59:49,917 - AutonomousAgent - INFO - ======================================================================
+2025-12-14 18:59:49,917 - AutonomousAgent - INFO - AUTONOMOUS RESPONSE COMPLETED - Case DF-FC39A8387672A87B
+2025-12-14 18:59:49,917 - AutonomousAgent - INFO - ======================================================================
+2025-12-14 18:59:53,979 - werkzeug - INFO - 127.0.0.1 - - [14/Dec/2025 18:59:53] "POST /upload HTTP/1.1" 200 -
+2025-12-14 18:59:54,083 - werkzeug - INFO - 127.0.0.1 - - [14/Dec/2025 18:59:54] "GET /static/img/video-poster.jpg HTTP/1.1" 200 -
+2025-12-14 18:59:54,225 - werkzeug - INFO - 127.0.0.1 - - [14/Dec/2025 18:59:54] "[35m[1mGET /static/videos/uploaded_video_1765718984.mp4 HTTP/1.1[0m" 206 -
+2025-12-14 18:59:54,235 - werkzeug - INFO - 127.0.0.1 - - [14/Dec/2025 18:59:54] "GET /static/videos/uploaded_video_1765718984.mp4 HTTP/1.1" 200 -
+2025-12-14 19:00:45,453 - AutonomousAgent - INFO - ======================================================================
+2025-12-14 19:00:45,455 - AutonomousAgent - INFO - AUTONOMOUS AGENT INITIATED
+2025-12-14 19:00:45,455 - AutonomousAgent - INFO - ======================================================================
+2025-12-14 19:00:45,455 - AutonomousAgent - INFO - Case ID Generated: DF-25787C3F3FB3EE98
+2025-12-14 19:00:45,455 - AutonomousAgent - INFO - Logging comprehensive evidence...
+2025-12-14 19:00:45,461 - AutonomousAgent - INFO - Evidence logged for case DF-25787C3F3FB3EE98: data/evidence\DF-25787C3F3FB3EE98_evidence.json
+2025-12-14 19:00:45,463 - AutonomousAgent - INFO - Creating summary report...
+2025-12-14 19:00:45,464 - AutonomousAgent - INFO - Summary report created: data/evidence\DF-25787C3F3FB3EE98_report.txt
+2025-12-14 19:00:45,465 - AutonomousAgent - INFO - ======================================================================
+2025-12-14 19:00:45,466 - AutonomousAgent - INFO - AUTONOMOUS RESPONSE COMPLETED - Case DF-25787C3F3FB3EE98
+2025-12-14 19:00:45,466 - AutonomousAgent - INFO - ======================================================================
+2025-12-14 19:00:48,499 - werkzeug - INFO - 127.0.0.1 - - [14/Dec/2025 19:00:48] "POST /upload HTTP/1.1" 200 -
+2025-12-14 19:00:48,565 - werkzeug - INFO - 127.0.0.1 - - [14/Dec/2025 19:00:48] "[36mGET /static/img/video-poster.jpg HTTP/1.1[0m" 304 -
+2025-12-14 19:00:48,615 - werkzeug - INFO - 127.0.0.1 - - [14/Dec/2025 19:00:48] "GET /static/videos/uploaded_video_1765719041.mp4 HTTP/1.1" 200 -
+2025-12-14 19:00:52,786 - werkzeug - INFO - 127.0.0.1 - - [14/Dec/2025 19:00:52] "[35m[1mGET /static/videos/uploaded_video_1765719041.mp4 HTTP/1.1[0m" 206 -
+2025-12-14 19:01:28,557 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.29.84:5000
+2025-12-14 19:01:28,557 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-14 19:01:28,586 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-14 19:01:35,097 - werkzeug - WARNING -  * Debugger is active!
+2025-12-14 19:01:35,111 - werkzeug - INFO -  * Debugger PIN: 140-503-552
+2025-12-14 19:01:35,201 - werkzeug - INFO - 127.0.0.1 - - [14/Dec/2025 19:01:35] "GET / HTTP/1.1" 200 -
+2025-12-14 19:01:47,958 - AutonomousAgent - INFO - ======================================================================
+2025-12-14 19:01:47,959 - AutonomousAgent - INFO - AUTONOMOUS AGENT INITIATED
+2025-12-14 19:01:47,959 - AutonomousAgent - INFO - ======================================================================
+2025-12-14 19:01:47,989 - AutonomousAgent - INFO - Case ID Generated: DF-AD0D4FCE3F260CD8
+2025-12-14 19:01:47,989 - AutonomousAgent - INFO - Logging comprehensive evidence...
+2025-12-14 19:01:47,995 - AutonomousAgent - INFO - Evidence logged for case DF-AD0D4FCE3F260CD8: data/evidence\DF-AD0D4FCE3F260CD8_evidence.json
+2025-12-14 19:01:47,995 - AutonomousAgent - INFO - Creating summary report...
+2025-12-14 19:01:47,996 - AutonomousAgent - INFO - Summary report created: data/evidence\DF-AD0D4FCE3F260CD8_report.txt
+2025-12-14 19:01:47,996 - AutonomousAgent - INFO - Sending HIGH severity alert...
+2025-12-14 19:01:47,996 - AutonomousAgent - WARNING - ALERT [HIGH] - Case DF-AD0D4FCE3F260CD8
+2025-12-14 19:01:48,329 - AutonomousAgent - INFO - ======================================================================
+2025-12-14 19:01:48,329 - AutonomousAgent - INFO - AUTONOMOUS RESPONSE COMPLETED - Case DF-AD0D4FCE3F260CD8
+2025-12-14 19:01:48,329 - AutonomousAgent - INFO - ======================================================================
+2025-12-14 19:01:48,458 - werkzeug - INFO - 127.0.0.1 - - [14/Dec/2025 19:01:48] "POST /upload HTTP/1.1" 200 -
+2025-12-14 19:01:49,046 - werkzeug - INFO - 127.0.0.1 - - [14/Dec/2025 19:01:49] "[35m[1mGET /static/videos/uploaded_video_1765719102.mp4 HTTP/1.1[0m" 206 -
+2025-12-14 19:04:16,759 - werkzeug - INFO - 127.0.0.1 - - [14/Dec/2025 19:04:16] "GET / HTTP/1.1" 200 -
+2025-12-14 19:04:34,564 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.29.84:5000
+2025-12-14 19:04:34,564 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-14 19:04:34,587 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-14 19:04:44,193 - werkzeug - WARNING -  * Debugger is active!
+2025-12-14 19:04:44,204 - werkzeug - INFO -  * Debugger PIN: 140-503-552
+2025-12-14 19:04:44,295 - werkzeug - INFO - 127.0.0.1 - - [14/Dec/2025 19:04:44] "GET / HTTP/1.1" 200 -
+2025-12-14 19:04:49,624 - werkzeug - INFO - 127.0.0.1 - - [14/Dec/2025 19:04:49] "GET / HTTP/1.1" 200 -
+2025-12-14 19:05:02,214 - AutonomousAgent - INFO - ======================================================================
+2025-12-14 19:05:02,214 - AutonomousAgent - INFO - AUTONOMOUS AGENT INITIATED
+2025-12-14 19:05:02,214 - AutonomousAgent - INFO - ======================================================================
+2025-12-14 19:05:02,214 - AutonomousAgent - INFO - Case ID Generated: DF-DB8331FF0E618E97
+2025-12-14 19:05:02,214 - AutonomousAgent - INFO - Logging comprehensive evidence...
+2025-12-14 19:05:02,214 - AutonomousAgent - INFO - Evidence logged for case DF-DB8331FF0E618E97: data/evidence\DF-DB8331FF0E618E97_evidence.json
+2025-12-14 19:05:02,214 - AutonomousAgent - INFO - Creating summary report...
+2025-12-14 19:05:02,231 - AutonomousAgent - INFO - Summary report created: data/evidence\DF-DB8331FF0E618E97_report.txt
+2025-12-14 19:05:02,232 - AutonomousAgent - INFO - Sending HIGH severity alert...
+2025-12-14 19:05:02,232 - AutonomousAgent - WARNING - ALERT [HIGH] - Case DF-DB8331FF0E618E97
+2025-12-14 19:05:02,244 - werkzeug - INFO -  * Detected change in 'C:\\Users\\pashi\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\flask\\app.py', reloading
+2025-12-14 19:05:02,257 - werkzeug - INFO -  * Detected change in 'C:\\Users\\pashi\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\werkzeug\\serving.py', reloading
+2025-12-14 19:05:02,257 - AutonomousAgent - INFO - ======================================================================
+2025-12-14 19:05:02,257 - AutonomousAgent - INFO - AUTONOMOUS RESPONSE COMPLETED - Case DF-DB8331FF0E618E97
+2025-12-14 19:05:02,257 - AutonomousAgent - INFO - ======================================================================
+2025-12-14 19:05:02,305 - werkzeug - INFO - 127.0.0.1 - - [14/Dec/2025 19:05:02] "POST /upload HTTP/1.1" 200 -
+2025-12-14 19:05:02,305 - werkzeug - INFO -  * Detected change in 'C:\\Users\\pashi\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\werkzeug\\sansio\\response.py', reloading
+2025-12-14 19:05:02,488 - werkzeug - INFO - 127.0.0.1 - - [14/Dec/2025 19:05:02] "[35m[1mGET /static/videos/uploaded_video_1765719297.mp4 HTTP/1.1[0m" 206 -
+2025-12-14 19:05:06,120 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-14 19:05:12,871 - werkzeug - WARNING -  * Debugger is active!
+2025-12-14 19:05:12,885 - werkzeug - INFO -  * Debugger PIN: 140-503-552
+2025-12-14 19:05:46,070 - werkzeug - INFO -  * Detected change in 'C:\\Users\\pashi\\Downloads\\deepfake\\debug_video_access.py', reloading
+2025-12-14 19:05:46,094 - werkzeug - INFO -  * Detected change in 'C:\\Users\\pashi\\Downloads\\deepfake\\deepfake_detector.py', reloading
+2025-12-14 19:05:48,217 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-14 19:05:54,135 - werkzeug - WARNING -  * Debugger is active!
+2025-12-14 19:05:54,140 - werkzeug - INFO -  * Debugger PIN: 140-503-552

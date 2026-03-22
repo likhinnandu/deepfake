@@ -1,0 +1,10 @@
+{
+  "case_id": "DF-DAD91626ACB8531C",
+  "timestamp": "2025-12-14T18:31:38.731180",
+  "severity": "HIGH",
+  "alert_sent": true,
+  "recipients": [
+    "system_log"
+  ],
+  "method": "console"
+}

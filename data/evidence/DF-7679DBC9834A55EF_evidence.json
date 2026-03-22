@@ -1,0 +1,435 @@
+{
+  "case_id": "DF-7679DBC9834A55EF",
+  "timestamp": "2025-12-14T18:54:50.602631",
+  "video_information": {
+    "filename": "fake.mp4",
+    "size": "133.65 KB",
+    "source": "2025-12-14 13:24:45 UTC",
+    "upload_time": "2025-12-14T13:24:45.989678"
+  },
+  "detection_results": {
+    "deepfake_probability": 67,
+    "confidence_score": 100,
+    "total_frames": 297,
+    "suspicious_frames": 20,
+    "processing_time": 3.34,
+    "video_specs": {
+      "fps": 30,
+      "resolution": "124x152"
+    }
+  },
+  "anomaly_analysis": {
+    "face_similarity_issues": 35,
+    "lighting_inconsistencies": 0,
+    "edge_artifacts": 12,
+    "symmetry_issues": 0,
+    "compression_artifacts": 12,
+    "blinking_anomalies": 0,
+    "detailed_anomalies": {
+      "face_similarity": [
+        {
+          "frame": 4,
+          "similarity": 0.5593059062957764,
+          "timestamp": 0.13333333333333333
+        },
+        {
+          "frame": 8,
+          "similarity": 0.6582768559455872,
+          "timestamp": 0.26666666666666666
+        },
+        {
+          "frame": 12,
+          "similarity": 0.9503869414329529,
+          "timestamp": 0.4
+        },
+        {
+          "frame": 16,
+          "similarity": 0.7705596685409546,
+          "timestamp": 0.5333333333333333
+        },
+        {
+          "frame": 20,
+          "similarity": 0.9434871077537537,
+          "timestamp": 0.6666666666666666
+        },
+        {
+          "frame": 24,
+          "similarity": 0.817651629447937,
+          "timestamp": 0.8
+        },
+        {
+          "frame": 28,
+          "similarity": 0.8892765045166016,
+          "timestamp": 0.9333333333333333
+        },
+        {
+          "frame": 32,
+          "similarity": 0.8538447618484497,
+          "timestamp": 1.0666666666666667
+        },
+        {
+          "frame": 36,
+          "similarity": 0.6802237629890442,
+          "timestamp": 1.2
+        },
+        {
+          "frame": 40,
+          "similarity": 0.8402443528175354,
+          "timestamp": 1.3333333333333333
+        },
+        {
+          "frame": 44,
+          "similarity": 0.698460578918457,
+          "timestamp": 1.4666666666666666
+        },
+        {
+          "frame": 48,
+          "similarity": 0.8631057143211365,
+          "timestamp": 1.6
+        },
+        {
+          "frame": 52,
+          "similarity": 0.8359434604644775,
+          "timestamp": 1.7333333333333334
+        },
+        {
+          "frame": 56,
+          "similarity": 0.8874704241752625,
+          "timestamp": 1.8666666666666667
+        },
+        {
+          "frame": 60,
+          "similarity": 0.8817976713180542,
+          "timestamp": 2.0
+        },
+        {
+          "frame": 64,
+          "similarity": 0.8586686849594116,
+          "timestamp": 2.1333333333333333
+        },
+        {
+          "frame": 68,
+          "similarity": 0.8247779011726379,
+          "timestamp": 2.2666666666666666
+        },
+        {
+          "frame": 72,
+          "similarity": 0.9098297357559204,
+          "timestamp": 2.4
+        },
+        {
+          "frame": 76,
+          "similarity": 0.5788519382476807,
+          "timestamp": 2.533333333333333
+        },
+        {
+          "frame": 80,
+          "similarity": 0.8110911250114441,
+          "timestamp": 2.6666666666666665
+        },
+        {
+          "frame": 84,
+          "similarity": 0.8850993514060974,
+          "timestamp": 2.8
+        },
+        {
+          "frame": 88,
+          "similarity": 0.8508674502372742,
+          "timestamp": 2.933333333333333
+        },
+        {
+          "frame": 92,
+          "similarity": 0.7750145196914673,
+          "timestamp": 3.066666666666667
+        },
+        {
+          "frame": 96,
+          "similarity": 0.8425174355506897,
+          "timestamp": 3.2
+        },
+        {
+          "frame": 100,
+          "similarity": 0.9534139633178711,
+          "timestamp": 3.3333333333333335
+        },
+        {
+          "frame": 104,
+          "similarity": 0.9348869919776917,
+          "timestamp": 3.466666666666667
+        },
+        {
+          "frame": 108,
+          "similarity": 0.9009737372398376,
+          "timestamp": 3.6
+        },
+        {
+          "frame": 112,
+          "similarity": 0.9247302412986755,
+          "timestamp": 3.7333333333333334
+        },
+        {
+          "frame": 116,
+          "similarity": 0.9055707454681396,
+          "timestamp": 3.8666666666666667
+        },
+        {
+          "frame": 120,
+          "similarity": 0.8378030061721802,
+          "timestamp": 4.0
+        },
+        {
+          "frame": 124,
+          "similarity": 0.9617829322814941,
+          "timestamp": 4.133333333333334
+        },
+        {
+          "frame": 128,
+          "similarity": 0.7934780120849609,
+          "timestamp": 4.266666666666667
+        },
+        {
+          "frame": 132,
+          "similarity": 0.8322329521179199,
+          "timestamp": 4.4
+        },
+        {
+          "frame": 188,
+          "similarity": 0.2614879608154297,
+          "timestamp": 6.266666666666667
+        },
+        {
+          "frame": 196,
+          "similarity": 0.6067137718200684,
+          "timestamp": 6.533333333333333
+        }
+      ],
+      "lighting": [],
+      "edges": [
+        {
+          "frame": 0,
+          "timestamp": 0.0,
+          "anomaly": true,
+          "type": "edge_artifacts",
+          "confidence": 0.7,
+          "details": "Edge density: 0.157"
+        },
+        {
+          "frame": 12,
+          "timestamp": 0.4,
+          "anomaly": true,
+          "type": "edge_artifacts",
+          "confidence": 0.7,
+          "details": "Edge density: 0.186"
+        },
+        {
+          "frame": 24,
+          "timestamp": 0.8,
+          "anomaly": true,
+          "type": "edge_artifacts",
+          "confidence": 0.7,
+          "details": "Edge density: 0.180"
+        },
+        {
+          "frame": 36,
+          "timestamp": 1.2,
+          "anomaly": true,
+          "type": "edge_artifacts",
+          "confidence": 0.7,
+          "details": "Edge density: 0.177"
+        },
+        {
+          "frame": 48,
+          "timestamp": 1.6,
+          "anomaly": true,
+          "type": "edge_artifacts",
+          "confidence": 0.7,
+          "details": "Edge density: 0.176"
+        },
+        {
+          "frame": 60,
+          "timestamp": 2.0,
+          "anomaly": true,
+          "type": "edge_artifacts",
+          "confidence": 0.7,
+          "details": "Edge density: 0.187"
+        },
+        {
+          "frame": 72,
+          "timestamp": 2.4,
+          "anomaly": true,
+          "type": "edge_artifacts",
+          "confidence": 0.7,
+          "details": "Edge density: 0.182"
+        },
+        {
+          "frame": 84,
+          "timestamp": 2.8,
+          "anomaly": true,
+          "type": "edge_artifacts",
+          "confidence": 0.7,
+          "details": "Edge density: 0.184"
+        },
+        {
+          "frame": 96,
+          "timestamp": 3.2,
+          "anomaly": true,
+          "type": "edge_artifacts",
+          "confidence": 0.7,
+          "details": "Edge density: 0.190"
+        },
+        {
+          "frame": 108,
+          "timestamp": 3.6,
+          "anomaly": true,
+          "type": "edge_artifacts",
+          "confidence": 0.7,
+          "details": "Edge density: 0.174"
+        },
+        {
+          "frame": 120,
+          "timestamp": 4.0,
+          "anomaly": true,
+          "type": "edge_artifacts",
+          "confidence": 0.7,
+          "details": "Edge density: 0.153"
+        },
+        {
+          "frame": 132,
+          "timestamp": 4.4,
+          "anomaly": true,
+          "type": "edge_artifacts",
+          "confidence": 0.7,
+          "details": "Edge density: 0.153"
+        }
+      ],
+      "symmetry": [],
+      "compression": [
+        {
+          "frame": 0,
+          "timestamp": 0.0,
+          "anomaly": true,
+          "type": "compression_artifacts",
+          "confidence": 0.55,
+          "details": "High frequency anomaly: 115.32"
+        },
+        {
+          "frame": 12,
+          "timestamp": 0.4,
+          "anomaly": true,
+          "type": "compression_artifacts",
+          "confidence": 0.55,
+          "details": "High frequency anomaly: 116.53"
+        },
+        {
+          "frame": 24,
+          "timestamp": 0.8,
+          "anomaly": true,
+          "type": "compression_artifacts",
+          "confidence": 0.55,
+          "details": "High frequency anomaly: 115.87"
+        },
+        {
+          "frame": 36,
+          "timestamp": 1.2,
+          "anomaly": true,
+          "type": "compression_artifacts",
+          "confidence": 0.55,
+          "details": "High frequency anomaly: 116.37"
+        },
+        {
+          "frame": 48,
+          "timestamp": 1.6,
+          "anomaly": true,
+          "type": "compression_artifacts",
+          "confidence": 0.55,
+          "details": "High frequency anomaly: 118.19"
+        },
+        {
+          "frame": 60,
+          "timestamp": 2.0,
+          "anomaly": true,
+          "type": "compression_artifacts",
+          "confidence": 0.55,
+          "details": "High frequency anomaly: 118.20"
+        },
+        {
+          "frame": 72,
+          "timestamp": 2.4,
+          "anomaly": true,
+          "type": "compression_artifacts",
+          "confidence": 0.55,
+          "details": "High frequency anomaly: 117.46"
+        },
+        {
+          "frame": 84,
+          "timestamp": 2.8,
+          "anomaly": true,
+          "type": "compression_artifacts",
+          "confidence": 0.55,
+          "details": "High frequency anomaly: 117.90"
+        },
+        {
+          "frame": 96,
+          "timestamp": 3.2,
+          "anomaly": true,
+          "type": "compression_artifacts",
+          "confidence": 0.55,
+          "details": "High frequency anomaly: 117.28"
+        },
+        {
+          "frame": 108,
+          "timestamp": 3.6,
+          "anomaly": true,
+          "type": "compression_artifacts",
+          "confidence": 0.55,
+          "details": "High frequency anomaly: 115.95"
+        },
+        {
+          "frame": 120,
+          "timestamp": 4.0,
+          "anomaly": true,
+          "type": "compression_artifacts",
+          "confidence": 0.55,
+          "details": "High frequency anomaly: 117.46"
+        },
+        {
+          "frame": 132,
+          "timestamp": 4.4,
+          "anomaly": true,
+          "type": "compression_artifacts",
+          "confidence": 0.55,
+          "details": "High frequency anomaly: 117.87"
+        }
+      ],
+      "blinking": []
+    }
+  },
+  "ai_analysis": {
+    "visual_explanation": "=== AUTOMATED TECHNICAL ANALYSIS ===\nTotal Anomalies Detected: 59\n\n\ud83d\udd34 FACE SIMILARITY ANOMALIES (35 detected):\n   The facial encoding changed significantly across frames.\n   This suggests potential face swap or identity manipulation.\n   Severity: CRITICAL\n\n\u2702\ufe0f EDGE ARTIFACTS (12 detected):\n   Unusual patterns found at face boundaries.\n   High edge density suggests digital manipulation.\n   These are typical markers of face-swap technology.\n\n\ud83d\udce6 COMPRESSION ANOMALIES (12 detected):\n   Inconsistent compression patterns found.\n   This suggests multiple encoding passes.\n   Often occurs when manipulated content is re-encoded.\n\n\n=== OVERALL ASSESSMENT ===\n\u26a0\ufe0f HIGH PROBABILITY OF MANIPULATION\nMultiple significant anomalies detected across different analysis types.\nStrong evidence suggests this content has been digitally altered.\n",
+    "anomaly_breakdown": "\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\n             TECHNICAL ANOMALY BREAKDOWN\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\n\n1. FACE SIMILARITY ANALYSIS\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n   Frame 4 @ 0.13s\n   Similarity Score: 0.5593\n   Status: ANOMALY\n\n   Frame 8 @ 0.27s\n   Similarity Score: 0.6583\n   Status: ANOMALY\n\n   Frame 12 @ 0.40s\n   Similarity Score: 0.9504\n   Status: ANOMALY\n\n   Frame 16 @ 0.53s\n   Similarity Score: 0.7706\n   Status: ANOMALY\n\n   Frame 20 @ 0.67s\n   Similarity Score: 0.9435\n   Status: ANOMALY\n\n   ... and 30 more occurrences\n\n   INTERPRETATION:\n   - Low similarity indicates identity changes\n   - Could suggest face swap technology\n   - Threshold used: 0.99 (very strict)\n\n2. EDGE ARTIFACT ANALYSIS\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n   Frame 0 @ 0.00s\n   Details: Edge density: 0.157\n   Confidence: 70.00%\n\n   Frame 12 @ 0.40s\n   Details: Edge density: 0.186\n   Confidence: 70.0",
+    "search_results_summary": "\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\n        EVIDENCE SEARCH RECOMMENDATIONS\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\n\nSince automated search is unavailable, here are manual\ninvestigation steps:\n\n1. REVERSE IMAGE/VIDEO SEARCH\n   \u2022 Extract key frames from the video\n   \u2022 Use Google Images reverse search\n   \u2022 Try TinEye.com for image matching\n   \u2022 Check Yandex reverse image search\n\n2. CONTEXTUAL VERIFICATION\n   \u2022 Search for: \"fake.mp4\"\n   \u2022 Look for original source material\n   \u2022 Check publication dates and timestamps\n   \u2022 Verify against known authentic content\n\n3. METADATA ANALYSIS\n   \u2022 Check EXIF data if available\n   \u2022 Review file creation timestamps\n   \u2022 Analyze encoding information\n   \u2022 Look for manipulation artifacts\n\n4. SOCIAL MEDIA SEARCH\n   \u2022 Search on Twitter, Facebook, YouTube\n   \u2022 Look for earlier instances\n   \u2022 Check for related discussions\n   \u2022 Find user reports or debunking\n\n5. NEWS & FACT-CHECK SITES\n   \u2022 Search fact-checking websit",
+    "severity": "HIGH"
+  },
+  "metadata": {
+    "detection_version": "2.0",
+    "model_used": "InceptionResnetV1 + Gemini 2.0 Flash",
+    "compliance_ready": true,
+    "chain_of_custody": [
+      {
+        "action": "Video uploaded and received",
+        "timestamp": "2025-12-14T18:54:50.602631",
+        "actor": "System"
+      },
+      {
+        "action": "Deepfake detection analysis initiated",
+        "timestamp": "2025-12-14T18:54:50.602631",
+        "actor": "Autonomous Agent"
+      },
+      {
+        "action": "Evidence logged",
+        "timestamp": "2025-12-14T18:54:50.602631",
+        "actor": "Autonomous Agent"
+      }
+    ]
+  }
+}

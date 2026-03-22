@@ -1,0 +1,249 @@
+{
+  "case_id": "DF-22AC0E197DA527AD",
+  "timestamp": "2026-03-22T22:39:00.446605",
+  "video_information": {
+    "filename": "fake.mp4",
+    "size": "133.65 KB",
+    "source": "2026-03-22 17:08:55 UTC",
+    "upload_time": "2026-03-22T17:08:55.730267"
+  },
+  "detection_results": {
+    "deepfake_probability": 28,
+    "confidence_score": 100,
+    "total_frames": 71,
+    "suspicious_frames": 2,
+    "processing_time": 3.47,
+    "video_specs": {
+      "fps": 30,
+      "resolution": "124x152"
+    }
+  },
+  "anomaly_analysis": {
+    "face_similarity_issues": 17,
+    "lighting_inconsistencies": 0,
+    "edge_artifacts": 6,
+    "symmetry_issues": 0,
+    "compression_artifacts": 6,
+    "blinking_anomalies": 0,
+    "detailed_anomalies": {
+      "face_similarity": [
+        {
+          "frame": 4,
+          "similarity": 0.5593057870864868,
+          "timestamp": 0.13333333333333333
+        },
+        {
+          "frame": 8,
+          "similarity": 0.6582766175270081,
+          "timestamp": 0.26666666666666666
+        },
+        {
+          "frame": 12,
+          "similarity": 0.9503870010375977,
+          "timestamp": 0.4
+        },
+        {
+          "frame": 16,
+          "similarity": 0.7705593705177307,
+          "timestamp": 0.5333333333333333
+        },
+        {
+          "frame": 20,
+          "similarity": 0.9434870481491089,
+          "timestamp": 0.6666666666666666
+        },
+        {
+          "frame": 24,
+          "similarity": 0.8176518082618713,
+          "timestamp": 0.8
+        },
+        {
+          "frame": 28,
+          "similarity": 0.8892768025398254,
+          "timestamp": 0.9333333333333333
+        },
+        {
+          "frame": 32,
+          "similarity": 0.8538450002670288,
+          "timestamp": 1.0666666666666667
+        },
+        {
+          "frame": 36,
+          "similarity": 0.6802232265472412,
+          "timestamp": 1.2
+        },
+        {
+          "frame": 40,
+          "similarity": 0.8402438759803772,
+          "timestamp": 1.3333333333333333
+        },
+        {
+          "frame": 44,
+          "similarity": 0.6984611749649048,
+          "timestamp": 1.4666666666666666
+        },
+        {
+          "frame": 48,
+          "similarity": 0.8631057739257812,
+          "timestamp": 1.6
+        },
+        {
+          "frame": 52,
+          "similarity": 0.835943341255188,
+          "timestamp": 1.7333333333333334
+        },
+        {
+          "frame": 56,
+          "similarity": 0.8874700665473938,
+          "timestamp": 1.8666666666666667
+        },
+        {
+          "frame": 60,
+          "similarity": 0.8817974328994751,
+          "timestamp": 2.0
+        },
+        {
+          "frame": 64,
+          "similarity": 0.8586686253547668,
+          "timestamp": 2.1333333333333333
+        },
+        {
+          "frame": 68,
+          "similarity": 0.8247779011726379,
+          "timestamp": 2.2666666666666666
+        }
+      ],
+      "lighting": [],
+      "edges": [
+        {
+          "frame": 0,
+          "timestamp": 0.0,
+          "anomaly": true,
+          "type": "edge_artifacts",
+          "confidence": 0.7,
+          "details": "Edge density: 0.157"
+        },
+        {
+          "frame": 12,
+          "timestamp": 0.4,
+          "anomaly": true,
+          "type": "edge_artifacts",
+          "confidence": 0.7,
+          "details": "Edge density: 0.186"
+        },
+        {
+          "frame": 24,
+          "timestamp": 0.8,
+          "anomaly": true,
+          "type": "edge_artifacts",
+          "confidence": 0.7,
+          "details": "Edge density: 0.180"
+        },
+        {
+          "frame": 36,
+          "timestamp": 1.2,
+          "anomaly": true,
+          "type": "edge_artifacts",
+          "confidence": 0.7,
+          "details": "Edge density: 0.177"
+        },
+        {
+          "frame": 48,
+          "timestamp": 1.6,
+          "anomaly": true,
+          "type": "edge_artifacts",
+          "confidence": 0.7,
+          "details": "Edge density: 0.176"
+        },
+        {
+          "frame": 60,
+          "timestamp": 2.0,
+          "anomaly": true,
+          "type": "edge_artifacts",
+          "confidence": 0.7,
+          "details": "Edge density: 0.187"
+        }
+      ],
+      "symmetry": [],
+      "compression": [
+        {
+          "frame": 0,
+          "timestamp": 0.0,
+          "anomaly": true,
+          "type": "compression_artifacts",
+          "confidence": 0.55,
+          "details": "High frequency anomaly: 115.32"
+        },
+        {
+          "frame": 12,
+          "timestamp": 0.4,
+          "anomaly": true,
+          "type": "compression_artifacts",
+          "confidence": 0.55,
+          "details": "High frequency anomaly: 116.53"
+        },
+        {
+          "frame": 24,
+          "timestamp": 0.8,
+          "anomaly": true,
+          "type": "compression_artifacts",
+          "confidence": 0.55,
+          "details": "High frequency anomaly: 115.87"
+        },
+        {
+          "frame": 36,
+          "timestamp": 1.2,
+          "anomaly": true,
+          "type": "compression_artifacts",
+          "confidence": 0.55,
+          "details": "High frequency anomaly: 116.37"
+        },
+        {
+          "frame": 48,
+          "timestamp": 1.6,
+          "anomaly": true,
+          "type": "compression_artifacts",
+          "confidence": 0.55,
+          "details": "High frequency anomaly: 118.19"
+        },
+        {
+          "frame": 60,
+          "timestamp": 2.0,
+          "anomaly": true,
+          "type": "compression_artifacts",
+          "confidence": 0.55,
+          "details": "High frequency anomaly: 118.20"
+        }
+      ],
+      "blinking": []
+    }
+  },
+  "ai_analysis": {
+    "visual_explanation": "=== AUTOMATED TECHNICAL ANALYSIS ===\nTotal Anomalies Detected: 29\n\n\ud83d\udd34 FACE SIMILARITY ANOMALIES (17 detected):\n   The facial encoding changed significantly across frames.\n   This suggests potential face swap or identity manipulation.\n   Severity: HIGH\n\n\u2702\ufe0f EDGE ARTIFACTS (6 detected):\n   Unusual patterns found at face boundaries.\n   High edge density suggests digital manipulation.\n   These are typical markers of face-swap technology.\n\n\ud83d\udce6 COMPRESSION ANOMALIES (6 detected):\n   Inconsistent compression patterns found.\n   This suggests multiple encoding passes.\n   Often occurs when manipulated content is re-encoded.\n\n\n=== OVERALL ASSESSMENT ===\n\u26a0\ufe0f MODERATE PROBABILITY OF MANIPULATION\nSeveral anomalies detected that warrant further investigation.\nContent shows characteristics of potential manipulation.\n",
+    "anomaly_breakdown": "\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\n             TECHNICAL ANOMALY BREAKDOWN\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\n\n1. FACE SIMILARITY ANALYSIS\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n   Frame 4 @ 0.13s\n   Similarity Score: 0.5593\n   Status: ANOMALY\n\n   Frame 8 @ 0.27s\n   Similarity Score: 0.6583\n   Status: ANOMALY\n\n   Frame 12 @ 0.40s\n   Similarity Score: 0.9504\n   Status: ANOMALY\n\n   Frame 16 @ 0.53s\n   Similarity Score: 0.7706\n   Status: ANOMALY\n\n   Frame 20 @ 0.67s\n   Similarity Score: 0.9435\n   Status: ANOMALY\n\n   ... and 12 more occurrences\n\n   INTERPRETATION:\n   - Low similarity indicates identity changes\n   - Could suggest face swap technology\n   - Threshold used: 0.99 (very strict)\n\n2. EDGE ARTIFACT ANALYSIS\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n   Frame 0 @ 0.00s\n   Details: Edge density: 0.157\n   Confidence: 70.00%\n\n   Frame 12 @ 0.40s\n   Details: Edge density: 0.186\n   Confidence: 70.0",
+    "search_results_summary": "\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\n        EVIDENCE SEARCH RECOMMENDATIONS\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\n\nSince automated search is unavailable, here are manual\ninvestigation steps:\n\n1. REVERSE IMAGE/VIDEO SEARCH\n   \u2022 Extract key frames from the video\n   \u2022 Use Google Images reverse search\n   \u2022 Try TinEye.com for image matching\n   \u2022 Check Yandex reverse image search\n\n2. CONTEXTUAL VERIFICATION\n   \u2022 Search for: \"fake.mp4\"\n   \u2022 Look for original source material\n   \u2022 Check publication dates and timestamps\n   \u2022 Verify against known authentic content\n\n3. METADATA ANALYSIS\n   \u2022 Check EXIF data if available\n   \u2022 Review file creation timestamps\n   \u2022 Analyze encoding information\n   \u2022 Look for manipulation artifacts\n\n4. SOCIAL MEDIA SEARCH\n   \u2022 Search on Twitter, Facebook, YouTube\n   \u2022 Look for earlier instances\n   \u2022 Check for related discussions\n   \u2022 Find user reports or debunking\n\n5. NEWS & FACT-CHECK SITES\n   \u2022 Search fact-checking websit",
+    "severity": "LOW"
+  },
+  "metadata": {
+    "detection_version": "2.0",
+    "model_used": "InceptionResnetV1 + Gemini 2.0 Flash",
+    "compliance_ready": true,
+    "chain_of_custody": [
+      {
+        "action": "Video uploaded and received",
+        "timestamp": "2026-03-22T22:39:00.446605",
+        "actor": "System"
+      },
+      {
+        "action": "Deepfake detection analysis initiated",
+        "timestamp": "2026-03-22T22:39:00.446605",
+        "actor": "Autonomous Agent"
+      },
+      {
+        "action": "Evidence logged",
+        "timestamp": "2026-03-22T22:39:00.446605",
+        "actor": "Autonomous Agent"
+      }
+    ]
+  }
+}

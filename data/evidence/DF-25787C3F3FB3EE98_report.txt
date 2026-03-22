@@ -1,0 +1,64 @@
+
+╔══════════════════════════════════════════════════════════════════╗
+║          DEEPFAKE DETECTION ANALYSIS REPORT                      ║
+╚══════════════════════════════════════════════════════════════════╝
+
+CASE INFORMATION
+─────────────────────────────────────────────────────────────────
+Case ID:          DF-25787C3F3FB3EE98
+Analysis Date:    2025-12-14 19:00:45
+Severity Level:   LOW
+
+DETECTION RESULTS
+─────────────────────────────────────────────────────────────────
+Deepfake Probability:     3%
+Confidence Score:         100%
+Total Frames Analyzed:    300
+Suspicious Frames:        1
+Processing Time:          3.37s
+
+ANOMALY SUMMARY
+─────────────────────────────────────────────────────────────────
+Face Similarity Issues:   38
+Lighting Inconsistencies: 0
+Edge Artifacts Detected:  0
+Symmetry Anomalies:       0
+Compression Issues:       15
+Blinking Pattern Issues:  0
+
+AI ANALYSIS SUMMARY
+─────────────────────────────────────────────────────────────────
+═══════════════════════════════════════════════════════════
+             TECHNICAL ANOMALY BREAKDOWN
+═══════════════════════════════════════════════════════════
+
+1. FACE SIMILARITY ANALYSIS
+────────────────────────────────────────────────────────────
+   Frame 4 @ 0.13s
+   Similarity Score: 0.9464
+   Status: ANOMALY
+
+   Frame 8 @ 0.27s
+   Similarity Score: 0.9760
+   Status: ANOMALY
+
+   Frame 16 @ 0.53s
+   Similarity Score: 0.9218
+   Status: ANOMALY
+
+   Frame 20 @ 0.67s
+   Similarity Score: 0.9303
+
+RECOMMENDED ACTIONS
+─────────────────────────────────────────────────────────────────
+1. Standard documentation and archival
+2. Monitor for related content
+3. Maintain normal processing workflow
+
+EVIDENCE LOCATION
+─────────────────────────────────────────────────────────────────
+All evidence has been preserved in: data/evidence/DF-25787C3F3FB3EE98_evidence.json
+
+This report is generated automatically by the Autonomous Deepfake Detection System.
+For questions, contact your security team.
+═══════════════════════════════════════════════════════════════════

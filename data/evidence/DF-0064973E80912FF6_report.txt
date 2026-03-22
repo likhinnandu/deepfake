@@ -1,0 +1,47 @@
+
+╔══════════════════════════════════════════════════════════════════╗
+║          DEEPFAKE DETECTION ANALYSIS REPORT                      ║
+╚══════════════════════════════════════════════════════════════════╝
+
+CASE INFORMATION
+─────────────────────────────────────────────────────────────────
+Case ID:          DF-0064973E80912FF6
+Analysis Date:    2025-12-14 18:33:06
+Severity Level:   HIGH
+
+DETECTION RESULTS
+─────────────────────────────────────────────────────────────────
+Deepfake Probability:     67%
+Confidence Score:         100%
+Total Frames Analyzed:    297
+Suspicious Frames:        20
+Processing Time:          3.26s
+
+ANOMALY SUMMARY
+─────────────────────────────────────────────────────────────────
+Face Similarity Issues:   35
+Lighting Inconsistencies: 0
+Edge Artifacts Detected:  12
+Symmetry Anomalies:       0
+Compression Issues:       12
+Blinking Pattern Issues:  0
+
+AI ANALYSIS SUMMARY
+─────────────────────────────────────────────────────────────────
+Error generating anomaly breakdown: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_con
+
+RECOMMENDED ACTIONS
+─────────────────────────────────────────────────────────────────
+1. Review content immediately
+2. Preserve evidence
+3. Contact authorities if necessary
+
+EVIDENCE LOCATION
+─────────────────────────────────────────────────────────────────
+All evidence has been preserved in: data/evidence/DF-0064973E80912FF6_evidence.json
+
+This report is generated automatically by the Autonomous Deepfake Detection System.
+For questions, contact your security team.
+═══════════════════════════════════════════════════════════════════

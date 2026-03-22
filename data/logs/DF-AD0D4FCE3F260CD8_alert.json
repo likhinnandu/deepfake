@@ -1,0 +1,10 @@
+{
+  "case_id": "DF-AD0D4FCE3F260CD8",
+  "timestamp": "2025-12-14T19:01:47.996688",
+  "severity": "HIGH",
+  "alert_sent": true,
+  "recipients": [
+    "system_log"
+  ],
+  "method": "console"
+}
