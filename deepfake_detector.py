@@ -4,7 +4,7 @@ from facenet_pytorch import MTCNN, InceptionResnetV1
 from torchvision.transforms import functional as F
 import time
 
-def run(video_path , video_path2):
+def run(video_path, video_path2):
 
     start_time = time.time()
 
@@ -17,6 +17,7 @@ def run(video_path , video_path2):
     cap = cv2.VideoCapture(video_path)
     frame_count = 0
     fps = int(cap.get(cv2.CAP_PROP_FPS))
+    total_video_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
     width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
     height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
     fourcc = cv2.VideoWriter_fourcc(*'H264')
@@ -28,15 +29,24 @@ def run(video_path , video_path2):
     frames_between_processing = int(fps / 7)
     resize_dim = (80, 80)
 
+    # --- Reasoning metrics ---
+    faces_detected_count = 0
+    frames_processed_count = 0
+    similarity_scores = []
+    low_similarity_count = 0
+    no_face_frames = 0
+
     while cap.isOpened():
         ret, frame = cap.read()
         if not ret:
             break
 
         if frame_count % frames_between_processing == 0:
+            frames_processed_count += 1
             boxes, _ = mtcnn.detect(frame)
 
             if boxes is not None and len(boxes) > 0:
+                faces_detected_count += 1
                 box = boxes[0].astype(int)
                 face = frame[box[1]:box[3], box[0]:box[2]]
 
@@ -49,8 +59,11 @@ def run(video_path , video_path2):
                         face_similarity = np.dot(current_face_encoding, previous_face_encoding) / (
                                     np.linalg.norm(current_face_encoding) * np.linalg.norm(previous_face_encoding))
 
+                        similarity_scores.append(float(face_similarity))
+
                         if face_similarity < threshold_face_similarity:
                             deepfake_count += 1
+                            low_similarity_count += 1
                         else:
                             deepfake_count = 0
 
@@ -65,6 +78,8 @@ def run(video_path , video_path2):
                                         cv2.LINE_AA)
 
                     previous_face_encoding = current_face_encoding
+            else:
+                no_face_frames += 1
 
         frame_count += 1
         out.write(frame)
@@ -77,11 +92,102 @@ def run(video_path , video_path2):
     cap.release()
     out.release()
 
-    accuracy = (deep_fake_frame_count / frame_count) * 1000
+    accuracy = (deep_fake_frame_count / frame_count) * 1000 if frame_count > 0 else 0
 
-    if accuracy>100:
+    if accuracy > 100:
         accuracy = 95
 
-    return int(accuracy)
+    # --- Build reasoning data ---
+    avg_similarity = float(np.mean(similarity_scores)) if similarity_scores else 0.0
+    min_similarity = float(np.min(similarity_scores)) if similarity_scores else 0.0
+    max_similarity = float(np.max(similarity_scores)) if similarity_scores else 0.0
+    face_detection_rate = round((faces_detected_count / frames_processed_count) * 100, 1) if frames_processed_count > 0 else 0.0
 
-    
+    # Build human-readable reasoning points
+    reasoning_points = []
+
+    # 1. Frame analysis summary
+    reasoning_points.append({
+        'icon': 'fa-film',
+        'title': 'Frame Analysis',
+        'detail': f'Analyzed {frames_processed_count} sampled frames out of {frame_count} total frames ({round(frames_processed_count / frame_count * 100, 1) if frame_count > 0 else 0}% coverage).'
+    })
+
+    # 2. Face detection summary
+    reasoning_points.append({
+        'icon': 'fa-face-smile',
+        'title': 'Face Detection',
+        'detail': f'Faces were detected in {faces_detected_count} of {frames_processed_count} processed frames ({face_detection_rate}% detection rate). {no_face_frames} frames had no detectable face.'
+    })
+
+    # 3. Similarity analysis
+    if similarity_scores:
+        reasoning_points.append({
+            'icon': 'fa-chart-line',
+            'title': 'Face Similarity Consistency',
+            'detail': f'Average inter-frame face similarity: {avg_similarity:.4f} (range: {min_similarity:.4f} – {max_similarity:.4f}). Threshold for anomaly: {threshold_face_similarity}.'
+        })
+
+        # 4. Anomaly count
+        reasoning_points.append({
+            'icon': 'fa-triangle-exclamation',
+            'title': 'Anomalous Frames Detected',
+            'detail': f'{low_similarity_count} frame comparisons fell below the similarity threshold ({threshold_face_similarity}), suggesting potential face-swapping or manipulation artifacts.'
+        })
+    else:
+        reasoning_points.append({
+            'icon': 'fa-chart-line',
+            'title': 'Face Similarity Consistency',
+            'detail': 'Not enough consecutive face detections to compute similarity scores.'
+        })
+
+    # 5. Deepfake flagged frames
+    reasoning_points.append({
+        'icon': 'fa-flag',
+        'title': 'Flagged Deepfake Frames',
+        'detail': f'{deep_fake_frame_count} frames were flagged as deepfake (consecutive anomaly streak exceeded {threshold_frames_for_deepfake} frame threshold).'
+    })
+
+    # 6. Processing time
+    reasoning_points.append({
+        'icon': 'fa-clock',
+        'title': 'Processing Time',
+        'detail': f'Total analysis completed in {execution_time:.2f} seconds using MTCNN face detection and FaceNet (InceptionResnetV1) embedding comparison.'
+    })
+
+    # 7. Final verdict reasoning
+    pct = int(accuracy)
+    if pct >= 75:
+        verdict_reason = 'A high number of consecutive frames showed significant facial inconsistencies, strongly indicating the use of deepfake or face-swap technology.'
+    elif pct >= 50:
+        verdict_reason = 'Several frames exhibited facial anomalies, but insufficient consecutive streaks were detected to make a definitive determination. The video may contain partial manipulation.'
+    else:
+        verdict_reason = 'The facial features remained highly consistent across frames with very few anomalies, suggesting the video is likely authentic and unmanipulated.'
+
+    reasoning_points.append({
+        'icon': 'fa-gavel',
+        'title': 'Verdict Rationale',
+        'detail': verdict_reason
+    })
+
+    reasoning_data = {
+        'total_frames': frame_count,
+        'frames_processed': frames_processed_count,
+        'faces_detected': faces_detected_count,
+        'deepfake_frames': deep_fake_frame_count,
+        'low_similarity_count': low_similarity_count,
+        'no_face_frames': no_face_frames,
+        'avg_similarity': round(avg_similarity, 4),
+        'min_similarity': round(min_similarity, 4),
+        'max_similarity': round(max_similarity, 4),
+        'face_detection_rate': face_detection_rate,
+        'execution_time': round(execution_time, 2),
+        'threshold_similarity': threshold_face_similarity,
+        'threshold_consecutive': threshold_frames_for_deepfake,
+        'reasoning_points': reasoning_points,
+        'video_resolution': f'{width}x{height}',
+        'video_fps': fps
+    }
+
+    return int(accuracy), reasoning_data
+

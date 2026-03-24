@@ -77,11 +77,19 @@ def upload_file():
             try:
                 module = importlib.import_module("deepfake_detector")
                 function = getattr(module, "run")
-                result_percent = function(video_path, output_path)
+                result_percent, reasoning_data = function(video_path, output_path)
             except Exception as e:
                 print(f"Error in deepfake detection: {str(e)}")
                 result_percent = 50  # Default value if detection fails
-                # No need to copy since we're using the same path
+                reasoning_data = {
+                    'total_frames': 0, 'frames_processed': 0, 'faces_detected': 0,
+                    'deepfake_frames': 0, 'low_similarity_count': 0, 'no_face_frames': 0,
+                    'avg_similarity': 0, 'min_similarity': 0, 'max_similarity': 0,
+                    'face_detection_rate': 0, 'execution_time': 0,
+                    'threshold_similarity': 0.99, 'threshold_consecutive': 15,
+                    'reasoning_points': [{'icon': 'fa-circle-exclamation', 'title': 'Analysis Error', 'detail': f'An error occurred during detection: {str(e)}. Default score of 50% applied.'}],
+                    'video_resolution': 'N/A', 'video_fps': 0
+                }
 
             # Generate proper URL for the video that will work in the browser
             # Make sure the path is relative to the static folder structure
@@ -97,7 +105,7 @@ def upload_file():
             }
 
             # Render the result page with the video information
-            return render_template('result.html', video_url=video_url, video_info=video_info)
+            return render_template('result.html', video_url=video_url, video_info=video_info, reasoning=reasoning_data)
         
         except Exception as e:
             print(f"Error processing upload: {str(e)}")

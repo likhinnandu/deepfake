@@ -554,6 +554,138 @@
             color: transparent;
         }
 
+        /* ===== REASONING SECTION ===== */
+        .reasoning-section {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #f8f9fa, #ffffff);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .reasoning-section::before {
+            content: '';
+            position: absolute;
+            top: -150px;
+            left: -150px;
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, rgba(145, 127, 179, 0.08), rgba(42, 47, 79, 0.04));
+        }
+
+        .reasoning-section::after {
+            content: '';
+            position: absolute;
+            bottom: -120px;
+            right: -120px;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, rgba(253, 226, 243, 0.12), rgba(229, 190, 236, 0.06));
+        }
+
+        .reasoning-container {
+            position: relative;
+            z-index: 10;
+        }
+
+        .reasoning-card {
+            background: white;
+            border-radius: 16px;
+            padding: 28px 30px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+            border-left: 4px solid var(--secondary);
+            transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        .reasoning-card:hover {
+            transform: translateX(8px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+            border-left-color: var(--primary);
+        }
+
+        .reasoning-card-icon {
+            width: 50px;
+            height: 50px;
+            min-width: 50px;
+            border-radius: 12px;
+            background: var(--gradient);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+        }
+
+        .reasoning-card-content {
+            flex: 1;
+        }
+
+        .reasoning-card-title {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: var(--primary);
+            margin-bottom: 6px;
+        }
+
+        .reasoning-card-detail {
+            color: #6c757d;
+            font-size: 0.95rem;
+            line-height: 1.65;
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .metric-tile {
+            background: white;
+            border-radius: 14px;
+            padding: 24px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+            transition: all 0.3s ease;
+            border-top: 3px solid var(--secondary);
+        }
+
+        .metric-tile:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+        }
+
+        .metric-tile-value {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 6px;
+        }
+
+        .metric-tile-label {
+            font-size: 0.85rem;
+            color: #6c757d;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        @media (max-width: 768px) {
+            .reasoning-card {
+                flex-direction: column;
+                gap: 12px;
+            }
+            .metrics-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
         .stats-label {
             font-size: 1.2rem;
             opacity: 0.9;
@@ -977,6 +1109,73 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Analysis Reasoning Section -->
+    <section class="reasoning-section" id="reasoning">
+        <div class="container reasoning-container">
+            <div class="section-title fade-in">
+                <h2>Analysis Reasoning</h2>
+                <p>Here's a transparent breakdown of how our AI reached its conclusion, step by step.</p>
+            </div>
+
+            <!-- Reasoning Cards -->
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    {% for point in reasoning.reasoning_points %}
+                    <div class="reasoning-card fade-in delay-{{ loop.index0 % 5 }}00">
+                        <div class="reasoning-card-icon">
+                            <i class="fas {{ point.icon }}"></i>
+                        </div>
+                        <div class="reasoning-card-content">
+                            <div class="reasoning-card-title">{{ point.title }}</div>
+                            <div class="reasoning-card-detail">{{ point.detail }}</div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <!-- Technical Metrics Grid -->
+            <div class="section-title fade-in" style="margin-top: 60px; margin-bottom: 30px;">
+                <h2 style="font-size: 1.8rem;">Technical Metrics</h2>
+                <p>Key numerical indicators from the analysis pipeline.</p>
+            </div>
+            <div class="metrics-grid fade-in">
+                <div class="metric-tile">
+                    <div class="metric-tile-value">{{ reasoning.total_frames }}</div>
+                    <div class="metric-tile-label">Total Frames</div>
+                </div>
+                <div class="metric-tile">
+                    <div class="metric-tile-value">{{ reasoning.frames_processed }}</div>
+                    <div class="metric-tile-label">Frames Processed</div>
+                </div>
+                <div class="metric-tile">
+                    <div class="metric-tile-value">{{ reasoning.faces_detected }}</div>
+                    <div class="metric-tile-label">Faces Detected</div>
+                </div>
+                <div class="metric-tile">
+                    <div class="metric-tile-value">{{ reasoning.deepfake_frames }}</div>
+                    <div class="metric-tile-label">Deepfake Frames</div>
+                </div>
+                <div class="metric-tile">
+                    <div class="metric-tile-value">{{ reasoning.avg_similarity }}</div>
+                    <div class="metric-tile-label">Avg Similarity</div>
+                </div>
+                <div class="metric-tile">
+                    <div class="metric-tile-value">{{ reasoning.face_detection_rate }}%</div>
+                    <div class="metric-tile-label">Face Detection Rate</div>
+                </div>
+                <div class="metric-tile">
+                    <div class="metric-tile-value">{{ reasoning.video_resolution }}</div>
+                    <div class="metric-tile-label">Resolution</div>
+                </div>
+                <div class="metric-tile">
+                    <div class="metric-tile-value">{{ reasoning.execution_time }}s</div>
+                    <div class="metric-tile-label">Processing Time</div>
                 </div>
             </div>
         </div>
