@@ -73,7 +73,7 @@ def upload_file():
             output_filename = filename  # Just use the same filename for now
             output_path = video_path    # Use the same path to avoid copy issues
 
-            # Run the detection
+            # Run the video detection
             try:
                 module = importlib.import_module("deepfake_detector")
                 function = getattr(module, "run")
@@ -87,9 +87,56 @@ def upload_file():
                     'avg_similarity': 0, 'min_similarity': 0, 'max_similarity': 0,
                     'face_detection_rate': 0, 'execution_time': 0,
                     'threshold_similarity': 0.99, 'threshold_consecutive': 15,
-                    'reasoning_points': [{'icon': 'fa-circle-exclamation', 'title': 'Analysis Error', 'detail': f'An error occurred during detection: {str(e)}. Default score of 50% applied.'}],
+                    'reasoning_points': [{'icon': 'fa-circle-exclamation', 'title': 'Analysis Error', 'detail': f'An error occurred during video detection: {str(e)}. Default score of 50% applied.'}],
                     'video_resolution': 'N/A', 'video_fps': 0
                 }
+
+            # Run the audio detection
+            try:
+                audio_module = importlib.import_module("audio_detector")
+                AudioDetector = getattr(audio_module, "AudioDeepfakeDetector")
+                detector = AudioDetector()
+                audio_results = detector.run_detection(video_path)
+                
+                if audio_results.get("has_audio"):
+                    audio_prob = audio_results["fake_probability"]
+                    
+                    reasoning_data["reasoning_points"].append({
+                        "icon": "fa-microphone",
+                        "title": "Audio Analysis",
+                        "detail": f"Audio track successfully analyzed. Detected audio manipulation probability: {audio_prob}%."
+                    })
+                    
+                    if audio_results.get("anomalies"):
+                        reasoning_data["reasoning_points"].append({
+                            "icon": "fa-volume-up" if audio_prob >= 50 else "fa-check-circle",
+                            "title": "Audio Anomalies Detected",
+                            "detail": f"Found {len(audio_results['anomalies'])} spectral anomalies (e.g., unusual Mel variance or spectral contrast)."
+                        })
+                    
+                    # Update final result percent if audio is highly likely fake while video wasn't
+                    if audio_prob > result_percent and audio_prob > 50:
+                        old_pct = result_percent
+                        # Weighted combination tipping towards the higher suspicious score
+                        result_percent = min(int((result_percent + audio_prob * 2) / 3), 95)
+                        reasoning_data["reasoning_points"].append({
+                            "icon": "fa-scale-balanced",
+                            "title": "Multimodal Verdict Adjustment",
+                            "detail": f"The anomalous audio signature raised the overall deepfake probability from {old_pct}% to {result_percent}%."
+                        })
+                else:
+                    reasoning_data["reasoning_points"].append({
+                        "icon": "fa-microphone-slash",
+                        "title": "Audio Analysis Skipped",
+                        "detail": audio_results.get("message", "No audio track available or extraction failed.")
+                    })
+            except Exception as e:
+                print(f"Error in audio detection: {str(e)}")
+                reasoning_data["reasoning_points"].append({
+                    "icon": "fa-circle-exclamation",
+                    "title": "Audio Analysis Error",
+                    "detail": f"An error prevented audio analysis: {str(e)}"
+                })
 
             # Generate proper URL for the video that will work in the browser
             # Make sure the path is relative to the static folder structure
