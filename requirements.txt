@@ -1,8 +1,6 @@
 facenet_pytorch
 Flask
 numpy
-opencv_contrib_python>=4.5.5.62
-opencv_python>=4.5.5.62
 opencv_python_headless>=4.5.5.62
 torch>=1.11.0
 torchvision>=0.12.0
