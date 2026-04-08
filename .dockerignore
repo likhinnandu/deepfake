@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+.venv/
+.git/
+.gitignore
+.vscode/
+static/videos/
+data/

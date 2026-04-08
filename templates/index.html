@@ -973,16 +973,19 @@
                 <div class="col-lg-10">
                     <div class="upload-card" data-aos="fade-up">
                         <h2 class="upload-title text-center">Detect Deepfakes Now</h2>
-                        <p class="upload-subtitle text-center">Upload an image or video to analyze for manipulation</p>
+                        <p class="upload-subtitle text-center">Upload a video or audio file to analyze for manipulation</p>
                         <form action="/upload" method="post" enctype="multipart/form-data" id="uploadForm">
                             <label for="customFile" class="custom-file-upload">
                                 <i class="fas fa-cloud-upload-alt"></i>
                                 <p>Drag and drop files here or click to browse</p>
                                 <span id="fileName"></span>
                             </label>
-                            <input type="file" id="customFile" name="file" class="d-none" onchange="validateFile()">
+                            <input type="file" id="customFile" name="file" class="d-none" onchange="validateFile()" accept=".mp4,.avi,.mov,.wmv,.webm,.mkv,.wav,.mp3,.m4a,.aac,.flac,.ogg,.opus">
                             <div class="alert alert-danger mt-3 d-none" id="fileAlert">
                                 The selected file is too large. Maximum size is 500MB.
+                            </div>
+                            <div class="alert alert-danger mt-3 d-none" id="fileTypeAlert">
+                                Unsupported file type. Please upload video (.mp4/.avi/.mov/.wmv/.webm/.mkv) or audio (.wav/.mp3/.m4a/.aac/.flac/.ogg/.opus).
                             </div>
                             <button type="submit" class="btn upload-btn" id="uploadBtn">Analyze Now</button>
                             <div class="progress mt-3 d-none" id="uploadProgress">
@@ -1242,15 +1245,29 @@
         function validateFile() {
             const fileInput = document.getElementById('customFile');
             const fileAlert = document.getElementById('fileAlert');
+            const fileTypeAlert = document.getElementById('fileTypeAlert');
             const uploadBtn = document.getElementById('uploadBtn');
             const fileName = document.getElementById('fileName');
+            const allowedExtensions = new Set([
+                'mp4', 'avi', 'mov', 'wmv', 'webm', 'mkv',
+                'wav', 'mp3', 'm4a', 'aac', 'flac', 'ogg', 'opus'
+            ]);
             
             if (fileInput.files.length > 0) {
                 const file = fileInput.files[0];
                 fileName.textContent = file.name;
+                const ext = file.name.includes('.') ? file.name.split('.').pop().toLowerCase() : '';
                 
                 // Check file size - 500MB max (in bytes)
                 const maxSize = 500 * 1024 * 1024;
+
+                if (!allowedExtensions.has(ext)) {
+                    fileTypeAlert.classList.remove('d-none');
+                    fileAlert.classList.add('d-none');
+                    uploadBtn.disabled = true;
+                    return false;
+                }
+                fileTypeAlert.classList.add('d-none');
                 
                 if (file.size > maxSize) {
                     fileAlert.classList.remove('d-none');
